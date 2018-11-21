@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HigherLowerActivity">
+
+    <ImageButton
+        android:id="@+id/mLowerButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="62dp"
+        android:layout_marginStart="10dp"
+        android:background="@color/redButton"
+        app:layout_constraintBottom_toTopOf="@+id/mResulttxt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@android:drawable/arrow_down_float" />
+
+    <ImageButton
+        android:id="@+id/mHigherButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="62dp"
+        android:layout_marginEnd="10dp"
+        android:background="@color/redButton"
+        app:layout_constraintBottom_toTopOf="@+id/mResulttxt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@android:drawable/arrow_up_float" />
+
+    <ImageView
+        android:id="@+id/mImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:layout_marginEnd="84dp"
+        android:layout_marginStart="85dp"
+        app:layout_constraintBottom_toTopOf="@+id/mResulttxt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/d1" />
+
+    <TextView
+        android:id="@+id/mResulttxt"
+        android:layout_width="359dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@color/backgroundResult"
+        android:padding="10dp"
+        android:text="Play this damn game"
+        android:textColor="@color/txtColor"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/mHighScoretxt"
+        android:layout_width="98dp"
+        android:layout_height="19dp"
+        android:layout_marginTop="51dp"
+        android:text="Highscore: 0"
+        app:layout_constraintBottom_toTopOf="@+id/mScoretxt"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <TextView
+        android:id="@+id/mScoretxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Score: 0"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="92dp" />
+
+    <ListView
+        android:id="@+id/mListView"
+        android:layout_width="254dp"
+        android:layout_height="213dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="8dp" />
+
+</android.support.constraint.ConstraintLayout>
